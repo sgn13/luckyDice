@@ -135,6 +135,9 @@ to {
       flex-wrap: wrap;
       flex-direction: column;
     }
+    .winner{
+      font-size: 16px;
+    }
     
 
   }

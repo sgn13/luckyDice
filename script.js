@@ -25,7 +25,7 @@ const game = () => {
         const computerHand = document.querySelector('.computer-hand')
         const reset = document.querySelector('.nill');
         const hands = document.querySelectorAll('.hands img')
-        const computerChoice = ['one', 'two', 'three', 'four', 'five', 'six']
+        const computerChoice = ['1', '2', '3', '4', '5', '6']
 
         hands.forEach(hand => {
             hand.addEventListener('animationend', function () {
@@ -41,14 +41,19 @@ const game = () => {
                 const computerPlay = computerChoice[Math.floor(Math.random() * 6)];
                 setTimeout(() => {
                     userChoice.forEach(opt => {
-                        console.log(opt);
+                        // console.log(opt);
                         opt.disabled = true;
+                        opt.style.opacity = '0.3';
+                        opt.style.transition = '0.5s ease';
+
                         setTimeout(() => {
+                            opt.style.opacity = '1';
+
                             opt.disabled = false;
-                            console.log(opt);
+                            // console.log(opt);
 
 
-                        }, 3000);
+                        }, 1000);
 
                     });
 
