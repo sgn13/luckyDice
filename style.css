@@ -123,6 +123,12 @@ to {
     font-style: italic;
     
   }
+  @media only screen and (max-width:800px){
+    .intro h1,button{
+      font-size: 30px; 
+    }
+
+  }
 
   /* Animation */
 
