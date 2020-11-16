@@ -64,6 +64,11 @@ button:hover {
   transition: 0.5s ease ;
    
 }
+.options{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 
 .match{
     display: none;
