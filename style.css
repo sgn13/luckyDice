@@ -66,14 +66,12 @@ button:hover {
 }
 .options{
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
 }
 
 .match{
     display: none;
     flex-direction: column;
-    height: 50vh;
+    height: 100vh;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -132,6 +130,12 @@ to {
     .intro h1,button{
       font-size: 30px; 
     }
+    .options{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    
 
   }
 
